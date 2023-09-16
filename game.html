@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: rgb(13, 25, 101);
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+        }
+        a{
+              display: flex;
+              justify-content: center;
+            background-color: beige;
+            padding: 10px 20px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.5em;
+
+        }
+        h2
+        {
+          padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello play this my game on termibale</h1>
+    <br><br>
+     <a href="#" onclick="code1()">Enter play for gusee under 10</a><br>
+     <a href="#" ondblclick="code2()">Enter play for gusee under 100</a>
+
+
+     <br><br><br>
+     <h2>Rules:
+        <br>
+        *This is game for gusee number in two stages <br>
+        *if you want to quite game to enter 0 and reload page
+
+     </h2>
+ <script>
+    //code for 100 gusee
+function code1()
+{
+    
+let x = Math.floor((Math.random()* 10)+1);
+
+
+let a = Number.parseInt(prompt("Enter your guess no (1 to 10)for win:\nchanse is:"))
+let guess = 1
+let i = 1
+
+    while(a !== x)
+    {
+        
+     a = Number.parseInt(prompt("Enter your guess no(1 to 10)for win\nchanse is"+(i++)+"of:"))
+        guess++
+    if(a == 0)
+       {
+         alert("Your try is over restart game\nReal number is:"+x)
+            
+       }
+ } 
+if(a == x)
+        { 
+         alert("!!!CONGRACHULATION!!! in chanse:"+guess+"\nYour guess number is right and no: "+x)
+     
+
+
+
+       }
+  
+
+
+ 
+ 
+     
+
+
+
+
+ 
+
+
+}
+
+//code for 100
+function code2()
+{
+
+    
+let x = Math.floor((Math.random()* 100)+1);
+
+
+let a = Number.parseInt(prompt("Enter your guess no (1 to 100)for win:\nchanse is:"))
+let guess = 1
+let i = 1
+
+        
+while(a !== x)
+    {
+        
+     a = Number.parseInt(prompt("Enter your guess no(1 to 10)for win\nchanse is"+(i++)+"of:"))
+        guess++
+    if(a == 0)
+       {
+         alert("Your try is over restart game\nReal number is:"+x)
+            
+       }
+ } 
+if(a == x)
+        { 
+         alert("!!!CONGRACHULATION!!! in chanse:"+guess+"\nYour guess number is right and no: "+x)
+     
+
+
+
+       }
+           
+
+}
+ </script>
+</body>
+</html>
